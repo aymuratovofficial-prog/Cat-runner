@@ -1,0 +1,131 @@
+import sqlite3
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, CallbackQueryHandler, MessageHandler, filters
+
+TOKEN = "8530524207:AAH24HlJHuAFE9j_Xhew34wDkFcc5_EryME"
+CHANNEL = "@nukus_jumis_bar", "@vipmusic_2026"
+ADMIN_ID = 100272577916, 1002880001827  # o'z telegram id
+
+# DATABASE
+conn = sqlite3.connect("users.db")
+cursor = conn.cursor()
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS users (
+    user_id INTEGER PRIMARY KEY,
+    referrer INTEGER,
+    balance INTEGER DEFAULT 0
+)
+""")
+conn.commit()
+
+# USER ADD
+def add_user(user_id, referrer=None):
+    cursor.execute("SELECT * FROM users WHERE user_id=?", (user_id,))
+    if cursor.fetchone() is None:
+        cursor.execute("INSERT INTO users (user_id, referrer) VALUES (?, ?)", (user_id, referrer))
+        conn.commit()
+
+        if referrer:
+            cursor.execute("UPDATE users SET balance = balance + 1000 WHERE user_id=?", (referrer,))
+            conn.commit()
+
+# START
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user = update.effective_user
+    args = context.args
+
+    referrer = int(args[0]) if args else None
+    add_user(user.id, referrer)
+    keyboard = [
+        [InlineKeyboardButton("🔔 Obuna bo‘lish", url=f"https://t.me/nukus_jumis_bar")],
+[InlineKeyboardButton("🔔 Obuna bo‘lish", url=f"https://t.me/vipmusic_2026")],
+        [InlineKeyboardButton("✅ Tekshirish", callback_data="check")]
+    ]
+
+    await update.message.reply_text(
+        "📢 Botdan foydalanish uchun kanalga obuna bo‘ling!",
+        reply_markup=InlineKeyboardMarkup(keyboard)
+    )
+
+# CHECK SUB
+async def check(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    user_id = query.from_user.id
+
+    member = await context.bot.get_chat_member(CHANNEL, user_id)
+
+    if member.status in ["member", "administrator", "creator"]:
+        menu = [
+            ["👥 Referallar"],
+            ["💰 Balans", "💳 Pul chiqarish"],
+            ["ℹ️ Yordam"]
+        ]
+
+        await query.message.reply_text(
+            "✅ Tasdiqlandi!\n\nMenyudan foydalaning:",
+            reply_markup=ReplyKeyboardMarkup(menu, resize_keyboard=True)
+        )
+
+        link = f"https://t.me/{context.bot.username}?start={user_id}"
+
+        await query.message.reply_text(f"🔗 Referal link:\n{link}")
+
+    else:
+        await query.answer("❌ Obuna bo‘ling!", show_alert=True)
+
+# BALANS
+async def balans(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = update.message.from_user.id
+
+    cursor.execute("SELECT balance FROM users WHERE user_id=?", (user_id,))
+    balance = cursor.fetchone()[0]
+
+    await update.message.reply_text(
+        f"💰 Balans:\n\nJoriy: {balance} so'm"
+    )
+
+# REFERAL
+async def referal(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = update.message.from_user.id
+
+    cursor.execute("SELECT COUNT(*) FROM users WHERE referrer=?", (user_id,))
+    count = cursor.fetchone()[0]
+
+    await update.message.reply_text(
+        f"👥 Sizda {count} ta referal bor"
+    )
+
+# PUL CHIQARISH
+async def withdraw(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text("💳 Pul chiqarish tez orada...")
+
+# ADMIN PANEL
+async def admin(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if update.message.from_user.id == ADMIN_ID:
+        cursor.execute("SELECT COUNT(*) FROM users")
+        users = cursor.fetchone()[0]
+
+        await update.message.reply_text(f"👨‍💻 Foydalanuvchilar: {users}")
+
+# MESSAGE HANDLER
+async def menu_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    text = update.message.text
+
+    if text == "💰 Balans":
+        await balans(update, context)
+    elif text == "👥 Referallar":
+        await referal(update, context)
+    elif text == "💳 Pul chiqarish":
+        await withdraw(update, context)
+    elif text == "ℹ️ Yordam":
+        await update.message.reply_text("Yordam bo‘limi")
+
+# RUN
+app = ApplicationBuilder().token(TOKEN).build()
+
+app.add_handler(CommandHandler("start", start))
+app.add_handler(CommandHandler("admin", admin))
+app.add_handler(CallbackQueryHandler(check, pattern="check"))
+app.add_handler(MessageHandler(filters.TEXT, menu_handler))
+
+app.run_polling()

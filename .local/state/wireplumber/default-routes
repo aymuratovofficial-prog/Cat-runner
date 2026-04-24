@@ -1,0 +1,3 @@
+[default-routes]
+alsa_card.pci-0000_00_05.0:output:analog-output;output-amplifier-on={"mute":true, "channelMap":["FL", "FR"], "latencyOffsetNsec":0, "channelVolumes":[0.008000, 0.008000]}
+alsa_card.pci-0000_00_05.0:profile:output:analog-stereo+input:analog-stereo=["analog-output;output-amplifier-on"]

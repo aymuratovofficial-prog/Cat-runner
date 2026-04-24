@@ -1,0 +1,155 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@9.2.0
+2 info using node@v22.22.2
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 27ms
+6 timing config:load:builtin Completed in 27ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 5ms
+10 timing config:load:file:/home/kali/.npmrc Completed in 1ms
+11 timing config:load:user Completed in 2ms
+12 timing config:load:file:/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 3ms
+15 timing config:load Completed in 46ms
+16 timing npm:load:configload Completed in 46ms
+17 timing npm:load:mkdirpcache Completed in 13ms
+18 timing npm:load:mkdirplogs Completed in 4ms
+19 verbose title npm install @railway/cli
+20 verbose argv "install" "--global" "@railway/cli"
+21 timing npm:load:setTitle Completed in 1ms
+22 timing config:load:flatten Completed in 5ms
+23 timing npm:load:display Completed in 9ms
+24 verbose logfile logs-max:10 dir:/home/kali/.npm/_logs/2026-04-24T07_45_48_046Z-
+25 verbose logfile /home/kali/.npm/_logs/2026-04-24T07_45_48_046Z-debug-0.log
+26 timing npm:load:logFile Completed in 26ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 103ms
+30 timing config:load:flatten Completed in 0ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 13ms
+34 timing idealTree:userRequests Completed in 15ms
+35 silly idealTree buildDeps
+36 silly fetch manifest @railway/cli@*
+37 http fetch GET 200 https://registry.npmjs.org/@railway%2fcli 1196ms (cache miss)
+38 silly placeDep ROOT @railway/cli@4.42.0 OK for:  want: *
+39 silly fetch manifest @napi-rs/triples@^1.1.0
+40 silly fetch manifest node-fetch@^3.1.0
+41 silly fetch manifest tar@^6.1.11
+42 http fetch GET 200 https://registry.npmjs.org/@napi-rs%2ftriples 626ms (cache miss)
+43 http fetch GET 200 https://registry.npmjs.org/node-fetch 639ms (cache miss)
+44 http fetch GET 200 https://registry.npmjs.org/tar 640ms (cache miss)
+45 timing idealTree:#root Completed in 1867ms
+46 silly placeDep node_modules/@railway/cli @napi-rs/triples@1.2.0 OK for: @railway/cli@4.42.0 want: ^1.1.0
+47 silly placeDep node_modules/@railway/cli node-fetch@3.3.2 OK for: @railway/cli@4.42.0 want: ^3.1.0
+48 silly placeDep node_modules/@railway/cli tar@6.2.1 OK for: @railway/cli@4.42.0 want: ^6.1.11
+49 silly fetch manifest data-uri-to-buffer@^4.0.0
+50 silly fetch manifest fetch-blob@^3.1.4
+51 silly fetch manifest formdata-polyfill@^4.0.10
+52 silly fetch manifest chownr@^2.0.0
+53 silly fetch manifest mkdirp@^1.0.3
+54 silly fetch manifest yallist@^4.0.0
+55 silly fetch manifest minipass@^5.0.0
+56 silly fetch manifest minizlib@^2.1.1
+57 silly fetch manifest fs-minipass@^2.0.0
+58 http fetch GET 200 https://registry.npmjs.org/data-uri-to-buffer 249ms (cache miss)
+59 http fetch GET 200 https://registry.npmjs.org/fetch-blob 252ms (cache miss)
+60 http fetch GET 200 https://registry.npmjs.org/formdata-polyfill 255ms (cache miss)
+61 http fetch GET 200 https://registry.npmjs.org/yallist 515ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/mkdirp 536ms (cache miss)
+63 http fetch GET 200 https://registry.npmjs.org/chownr 547ms (cache miss)
+64 http fetch GET 200 https://registry.npmjs.org/minipass 550ms (cache miss)
+65 http fetch GET 200 https://registry.npmjs.org/minizlib 782ms (cache miss)
+66 http fetch GET 200 https://registry.npmjs.org/fs-minipass 784ms (cache miss)
+67 timing idealTree:node_modules/@railway/cli Completed in 804ms
+68 timing idealTree:node_modules/@railway/cli/node_modules/@napi-rs/triples Completed in 0ms
+69 silly placeDep node_modules/@railway/cli data-uri-to-buffer@4.0.1 OK for: node-fetch@3.3.2 want: ^4.0.0
+70 silly placeDep node_modules/@railway/cli fetch-blob@3.2.0 OK for: node-fetch@3.3.2 want: ^3.1.4
+71 silly placeDep node_modules/@railway/cli formdata-polyfill@4.0.10 OK for: node-fetch@3.3.2 want: ^4.0.10
+72 silly fetch manifest node-domexception@^1.0.0
+73 silly fetch manifest web-streams-polyfill@^3.0.3
+74 http fetch GET 200 https://registry.npmjs.org/node-domexception 202ms (cache miss)
+75 http fetch GET 200 https://registry.npmjs.org/web-streams-polyfill 212ms (cache miss)
+76 timing idealTree:node_modules/@railway/cli/node_modules/node-fetch Completed in 224ms
+77 timing idealTree:node_modules/@railway/cli/node_modules/data-uri-to-buffer Completed in 0ms
+78 silly placeDep node_modules/@railway/cli node-domexception@1.0.0 OK for: fetch-blob@3.2.0 want: ^1.0.0
+79 silly placeDep node_modules/@railway/cli web-streams-polyfill@3.3.3 OK for: fetch-blob@3.2.0 want: ^3.0.3
+80 timing idealTree:node_modules/@railway/cli/node_modules/fetch-blob Completed in 5ms
+81 timing idealTree:node_modules/@railway/cli/node_modules/formdata-polyfill Completed in 0ms
+82 timing idealTree:node_modules/@railway/cli/node_modules/node-domexception Completed in 0ms
+83 silly placeDep node_modules/@railway/cli chownr@2.0.0 OK for: tar@6.2.1 want: ^2.0.0
+84 silly placeDep node_modules/@railway/cli fs-minipass@2.1.0 OK for: tar@6.2.1 want: ^2.0.0
+85 silly placeDep node_modules/@railway/cli minipass@5.0.0 OK for: tar@6.2.1 want: ^5.0.0
+86 silly placeDep node_modules/@railway/cli minizlib@2.1.2 OK for: tar@6.2.1 want: ^2.1.1
+87 silly placeDep node_modules/@railway/cli mkdirp@1.0.4 OK for: tar@6.2.1 want: ^1.0.3
+88 silly placeDep node_modules/@railway/cli yallist@4.0.0 OK for: tar@6.2.1 want: ^4.0.0
+89 silly fetch manifest minipass@^3.0.0
+90 timing idealTree:node_modules/@railway/cli/node_modules/tar Completed in 33ms
+91 timing idealTree:node_modules/@railway/cli/node_modules/chownr Completed in 0ms
+92 silly placeDep node_modules/@railway/cli/node_modules/fs-minipass minipass@3.3.6 OK for: fs-minipass@2.1.0 want: ^3.0.0
+93 timing idealTree:node_modules/@railway/cli/node_modules/fs-minipass Completed in 9ms
+94 timing idealTree:node_modules/@railway/cli/node_modules/minipass Completed in 0ms
+95 silly placeDep node_modules/@railway/cli/node_modules/minizlib minipass@3.3.6 OK for: minizlib@2.1.2 want: ^3.0.0
+96 timing idealTree:node_modules/@railway/cli/node_modules/minizlib Completed in 2ms
+97 timing idealTree:node_modules/@railway/cli/node_modules/mkdirp Completed in 0ms
+98 timing idealTree:node_modules/@railway/cli/node_modules/web-streams-polyfill Completed in 0ms
+99 timing idealTree:node_modules/@railway/cli/node_modules/yallist Completed in 0ms
+100 timing idealTree:node_modules/@railway/cli/node_modules/fs-minipass/node_modules/minipass Completed in 0ms
+101 timing idealTree:node_modules/@railway/cli/node_modules/minizlib/node_modules/minipass Completed in 0ms
+102 timing idealTree:buildDeps Completed in 2951ms
+103 timing idealTree:fixDepFlags Completed in 2ms
+104 timing idealTree Completed in 2982ms
+105 timing reify:loadTrees Completed in 2990ms
+106 timing reify:diffTrees Completed in 3ms
+107 silly reify moves {}
+108 timing reify:retireShallow Completed in 2ms
+109 timing reify:rollback:createSparse Completed in 0ms
+110 timing reify:rollback:retireShallow Completed in 0ms
+111 timing command:install Completed in 3024ms
+112 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'
+112 verbose stack     at async mkdir (node:internal/fs/promises:858:10)
+112 verbose stack     at async /usr/share/nodejs/@npmcli/arborist/lib/arborist/reify.js:521:20
+112 verbose stack     at async Promise.allSettled (index 0)
+112 verbose stack     at async [reifyPackages] (/usr/share/nodejs/@npmcli/arborist/lib/arborist/reify.js:234:11)
+112 verbose stack     at async Arborist.reify (/usr/share/nodejs/@npmcli/arborist/lib/arborist/reify.js:158:5)
+112 verbose stack     at async Install.exec (/usr/share/nodejs/npm/lib/commands/install.js:146:5)
+112 verbose stack     at async module.exports (/usr/share/nodejs/npm/lib/cli.js:133:5)
+113 verbose cwd /home/kali
+114 verbose Linux 6.18.12+kali-amd64
+115 verbose node v22.22.2
+116 verbose npm  v9.2.0
+117 error code EACCES
+118 error syscall mkdir
+119 error path /usr/local/lib/node_modules
+120 error errno -13
+121 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'
+121 error     at async mkdir (node:internal/fs/promises:858:10)
+121 error     at async /usr/share/nodejs/@npmcli/arborist/lib/arborist/reify.js:521:20
+121 error     at async Promise.allSettled (index 0)
+121 error     at async [reifyPackages] (/usr/share/nodejs/@npmcli/arborist/lib/arborist/reify.js:234:11)
+121 error     at async Arborist.reify (/usr/share/nodejs/@npmcli/arborist/lib/arborist/reify.js:158:5)
+121 error     at async Install.exec (/usr/share/nodejs/npm/lib/commands/install.js:146:5)
+121 error     at async module.exports (/usr/share/nodejs/npm/lib/cli.js:133:5) {
+121 error   errno: -13,
+121 error   code: 'EACCES',
+121 error   syscall: 'mkdir',
+121 error   path: '/usr/local/lib/node_modules'
+121 error }
+122 error
+122 error The operation was rejected by your operating system.
+122 error It is likely you do not have the permissions to access this file as the current user
+122 error
+122 error If you believe this might be a permissions issue, please double-check the
+122 error permissions of the file and its containing directories, or try running
+122 error the command again as root/Administrator.
+123 verbose exit -13
+124 timing npm Completed in 3209ms
+125 verbose unfinished npm timer reify 1777016748223
+126 verbose unfinished npm timer reify:createSparse 1777016751230
+127 verbose code -13
+128 error A complete log of this run can be found in:
+128 error     /home/kali/.npm/_logs/2026-04-24T07_45_48_046Z-debug-0.log

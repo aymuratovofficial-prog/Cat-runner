@@ -1,0 +1,239 @@
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/kali/.Xauthority
+/etc/X11/Xsession.d/30x11-common_xresources: line 16: has_option: command not found
+/etc/X11/Xsession.d/50x11-common_determine-startup: line 10: has_option: command not found
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/
+/etc/X11/Xsession.d/75dbus_dbus-launch: line 9: has_option: command not found
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+/etc/X11/Xsession.d/90x11-common_ssh-agent: line 9: has_option: command not found
+dbus-update-activation-environment: setting SHELL=/usr/bin/zsh
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting POWERSHELL_UPDATECHECK=Off
+dbus-update-activation-environment: setting POWERSHELL_TELEMETRY_OPTOUT=1
+dbus-update-activation-environment: setting DOTNET_CLI_TELEMETRY_OPTOUT=1
+dbus-update-activation-environment: setting NMAP_PRIVILEGED=
+dbus-update-activation-environment: setting DESKTOP_SESSION=lightdm-xsession
+dbus-update-activation-environment: setting PWD=/home/kali
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=lightdm-xsession
+dbus-update-activation-environment: setting LOGNAME=kali
+dbus-update-activation-environment: setting QT_QPA_PLATFORMTHEME=qt5ct
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting XAUTHORITY=/home/kali/.Xauthority
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/kali
+dbus-update-activation-environment: setting COMMAND_NOT_FOUND_INSTALL_PROMPT=1
+dbus-update-activation-environment: setting HOME=/home/kali
+dbus-update-activation-environment: setting LANG=en_US.UTF-8
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting USER=kali
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting SHLVL=0
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting QT_AUTO_SCREEN_SCALE_FACTOR=0
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/
+dbus-update-activation-environment: setting PATH=/home/kali/.local/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/kali/.dotnet/tools
+dbus-update-activation-environment: setting GDMSESSION=lightdm-xsession
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting _=/usr/bin/dbus-update-activation-environment
+** Message: 14:13:48.190: Failed to fetch _NET_NUMBER_OF_DESKTOPS; assuming 1
+** Message: 14:13:48.191: Failed to get _NET_WORKAREA; using full screen dimensions
+** Message: 14:13:48.192: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
+** Message: 14:13:48.192: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
+/usr/bin/iceauth:  creating new authority file /run/user/1000/ICEauthority
+gpg-agent: a gpg-agent is already running - not starting a new one
+** Message: 14:13:49.209: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
+
+(xfwm4:1329): xfwm4-WARNING **: 14:13:50.981: Another compositing manager is running on screen 0
+** Message: 14:13:54.630: Unable to migrate old setting /backdrop/screen0/monitor2/image-show; monitor 2 is not currently attached
+** Message: 14:13:54.634: Unable to migrate old setting /backdrop/screen0/monitor4/image-path; monitor 4 is not currently attached
+** Message: 14:13:54.640: Unable to migrate old setting /backdrop/screen0/monitor3/image-show; monitor 3 is not currently attached
+** Message: 14:13:54.640: Unable to migrate old setting /backdrop/screen0/monitor1/last-single-image; monitor 1 is not currently attached
+** Message: 14:13:54.642: Unable to migrate /backdrop/screen0/monitor0/color2 to RGBA as it contains invalid data
+** Message: 14:13:54.644: Unable to migrate old setting /backdrop/screen0/monitor1/color2; monitor 1 is not currently attached
+** Message: 14:13:54.645: Unable to migrate old setting /backdrop/screen0/monitor1/brightness; monitor 1 is not currently attached
+** Message: 14:13:54.646: Unable to migrate old setting /backdrop/screen0/monitor4/image-style; monitor 4 is not currently attached
+** Message: 14:13:54.651: Unable to migrate old setting /backdrop/screen0/monitor3/image-style; monitor 3 is not currently attached
+** Message: 14:13:54.652: Unable to migrate old setting /backdrop/screen0/monitor4/image-show; monitor 4 is not currently attached
+** Message: 14:13:54.666: Unable to migrate old setting /backdrop/screen0/monitor2/image-style; monitor 2 is not currently attached
+** Message: 14:13:54.684: Unable to migrate /backdrop/screen0/monitor0/color1 to RGBA as it contains invalid data
+** Message: 14:13:54.689: Unable to migrate old setting /backdrop/screen0/monitor1/last-image; monitor 1 is not currently attached
+** Message: 14:13:54.702: Unable to migrate old setting /backdrop/screen0/monitor1/image-path; monitor 1 is not currently attached
+** Message: 14:13:54.715: Unable to migrate old setting /backdrop/screen0/monitor2/image-path; monitor 2 is not currently attached
+** Message: 14:13:54.716: Unable to migrate old setting /backdrop/screen0/monitor1/image-style; monitor 1 is not currently attached
+** Message: 14:13:54.724: Unable to migrate old setting /backdrop/screen0/monitor3/image-path; monitor 3 is not currently attached
+** Message: 14:13:54.725: Unable to migrate old setting /backdrop/screen0/monitor1/color1; monitor 1 is not currently attached
+** Message: 14:13:54.728: Unable to migrate old setting /backdrop/screen0/monitor1/color-style; monitor 1 is not currently attached
+** Message: 14:13:54.729: Unable to migrate old setting /backdrop/screen0/monitor1/image-show; monitor 1 is not currently attached
+
+(wrapper-2.0:1461): xfce4-power-manager-plugin-WARNING **: 14:13:56.309: Xfce4-power-manager: The panel plugin is present, so the tray icon gets disabled.
+
+(polkit-mate-authentication-agent-1:1604): GLib-CRITICAL **: 14:13:56.479: g_variant_new_string: assertion 'string != NULL' failed
+
+(polkit-mate-authentication-agent-1:1604): polkit-mate-1-WARNING **: 14:13:56.479: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+blueman-applet 14.14.02 WARNING  PluginManager:153 __load_plugin: Not loading PPPSupport because its conflict has higher priority
+blueman-applet 14.14.02 WARNING  PluginManager:153 __load_plugin: Not loading DhcpClient because its conflict has higher priority
+blueman-applet 14.14.02 WARNING  DiscvManager:122 update_menuitems: warning: Adapter is None
+/usr/share/kali-themes/xfce4-screenshooter: 64: paplay: not found
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+qt.qpa.clipboard: QXcbClipboard: Unable to receive an event from the clipboard manager in a reasonable time
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+thunar-volman: Unsupported USB device type "usb".
+thunar-volman: Unsupported USB device type "usbhid".
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+thunar-volman: Unsupported USB device type "usb".
+thunar-volman: Unsupported USB device type "usbhid".
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+libEGL warning: DRI3 error: Could not get DRI3 device
+libEGL warning: Ensure your X server supports DRI3 to get accelerated rendering
+[Child 7310, MediaDecoderStateMachine #1] WARNING: Decoder=7f50c998f600 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file dom/media/MediaDecoderStateMachine.cpp:371
+[Child 7310, MediaDecoderStateMachine #1] WARNING: Decoder=7f50c998f600 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file dom/media/MediaDecoderStateMachineBase.cpp:168
+[Child 7310, MediaDecoderStateMachine #1] WARNING: Decoder=7f50c05d8200 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file dom/media/MediaDecoderStateMachine.cpp:371
+[Child 7310, MediaDecoderStateMachine #1] WARNING: Decoder=7f50c05d8200 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file dom/media/MediaDecoderStateMachineBase.cpp:168
+[Child 7310, MediaDecoderStateMachine #1] WARNING: Decoder=7f50be12ca00 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file dom/media/MediaDecoderStateMachine.cpp:371
+[Child 7310, MediaDecoderStateMachine #1] WARNING: Decoder=7f50be12ca00 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file dom/media/MediaDecoderStateMachineBase.cpp:168
+[Child 7310, MediaDecoderStateMachine #1] WARNING: Decoder=7f50c998e100 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file dom/media/MediaDecoderStateMachine.cpp:371
+[Child 7310, MediaDecoderStateMachine #1] WARNING: Decoder=7f50c998e100 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file dom/media/MediaDecoderStateMachineBase.cpp:168
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+thunar-volman: Unsupported USB device type "usbhid".
+thunar-volman: Unsupported USB device type "usb".
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+thunar-volman: Unsupported USB device type "usb".
+thunar-volman: Unsupported USB device type "usbhid".
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+thunar-volman: Unsupported USB device type "usb".
+thunar-volman: Unsupported USB device type "usbhid".
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+thunar-volman: Unsupported USB device type "usbhid".
+thunar-volman: Unsupported USB device type "usb".
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+thunar-volman: Unsupported USB device type "usbhid".
+thunar-volman: Unsupported USB device type "usb".
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+thunar-volman: Unsupported USB device type "usb".
+thunar-volman: Unsupported USB device type "usbhid".
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+thunar-volman: Unsupported USB device type "usbhid".
+thunar-volman: Unsupported USB device type "usb".
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+thunar-volman: Unsupported USB device type "usb".
+thunar-volman: Unsupported USB device type "usbhid".
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+thunar-volman: Unsupported USB device type "usbhid".
+thunar-volman: Unsupported USB device type "usb".
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTrans_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+SocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+qt.qpa.clipboard: QXcbClipboard: Unable to receive an event from the clipboard manager in a reasonable time
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+_IceTransSocketUNIXConnect: Cannot connect to non-local host kali
+Qt: Session management error: Could not open network socket
